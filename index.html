@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <title>Houssam Salhi — Browser-First Static Web Utilities</title>
+  <meta name="description" content="Three free, zero-signup, browser-first static web applications built by Houssam Salhi on Cloudflare Pages: ExifStudio, Alfalaki, and WedMaroc.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #fafafa;
+      --fg: #18181b;
+      --muted: #52525b;
+      --card: #ffffff;
+      --border: #e4e4e7;
+      --accent: #0f766e;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #09090b;
+        --fg: #f4f4f5;
+        --muted: #a1a1aa;
+        --card: #18181b;
+        --border: #27272a;
+        --accent: #2dd4bf;
+      }
+    }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem;
+    }
+    h1 { font-size: 1.9rem; margin-bottom: 0.4rem; }
+    .lead { color: var(--muted); margin-bottom: 2rem; }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1.25rem 1.5rem;
+      margin-bottom: 1.25rem;
+    }
+    .card h2 { margin: 0 0 0.4rem; font-size: 1.2rem; }
+    .card a { color: var(--accent); font-weight: 600; text-decoration: none; }
+    .card a:hover { text-decoration: underline; }
+    .card p { margin: 0.4rem 0 0; color: var(--muted); }
+    footer { margin-top: 2.5rem; font-size: 0.9rem; color: var(--muted); }
+    footer a { color: var(--accent); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Houssam Salhi — Open Web Utilities</h1>
+    <p class="lead">Fast, client-side, privacy-respecting static web tools built and deployed on Cloudflare Pages.</p>
+  </header>
+
+  <main>
+    <article class="card">
+      <h2><a href="https://www.exifstudio.online">ExifStudio — Browser EXIF &amp; Photo Metadata Editor</a></h2>
+      <p>Inspect, edit, and strip EXIF, GPS location tags, and camera metadata directly in your browser without uploading photos to any remote server. Supports JPEG, PNG, and WebP formats with batch processing.</p>
+    </article>
+
+    <article class="card">
+      <h2><a href="https://alfalaki.space">Alfalaki — Interactive Astronomy &amp; Lunar Ephemeris</a></h2>
+      <p>Client-side astronomical computation toolkit featuring live 3D sky maps, solar and lunar eclipse timelines, planetary coordinates, moon phases, and Islamic Hijri lunar visibility calculations.</p>
+    </article>
+
+    <article class="card">
+      <h2><a href="https://www.wedmaroc.com">WedMaroc — Moroccan Wedding Planner &amp; Vendor Directory</a></h2>
+      <p>Interactive Moroccan wedding planning workspace with city-by-city venue and vendor directories, budget estimation tools, timelines, and printable checklists tailored for ceremonies across Morocco.</p>
+    </article>
+  </main>
+
+  <footer>
+    <p>Maintained by Houssam Salhi (<a href="https://github.com/samsali-g">@samsali-g</a>). Related links:
+      <a href="https://www.exifstudio.online">ExifStudio</a> ·
+      <a href="https://alfalaki.space">Alfalaki</a> ·
+      <a href="https://www.wedmaroc.com">WedMaroc</a>
+    </p>
+  </footer>
+</body>
+</html>
