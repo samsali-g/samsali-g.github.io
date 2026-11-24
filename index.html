@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="index, follow">
   <title>Open Browser-First Static Web Utilities</title>
-  <meta name="description" content="Three free, zero-signup, browser-first static web applications deployed on Cloudflare Pages: ExifStudio, Alfalaki, and WedMaroc.">
+  <meta name="description" content="Directory of independent client-side web applications for imaging privacy, interactive astronomical ephemeris, and regional event budgeting.">
   <style>
     :root {
       color-scheme: light dark;
@@ -31,7 +31,7 @@
       background: var(--bg);
       color: var(--fg);
       line-height: 1.6;
-      max-width: 760px;
+      max-width: 820px;
       margin: 0 auto;
       padding: 3rem 1.25rem;
     }
@@ -41,13 +41,24 @@
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: 10px;
-      padding: 1.25rem 1.5rem;
+      padding: 1.35rem 1.5rem;
       margin-bottom: 1.25rem;
     }
-    .card h2 { margin: 0 0 0.4rem; font-size: 1.2rem; }
+    .card h2 { margin: 0 0 0.45rem; font-size: 1.2rem; }
     .card a { color: var(--accent); font-weight: 600; text-decoration: none; }
     .card a:hover { text-decoration: underline; }
-    .card p { margin: 0.4rem 0 0; color: var(--muted); }
+    .card p { margin: 0.4rem 0 0.75rem; color: var(--muted); }
+    .deep-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.45rem 0.9rem;
+      list-style: none;
+      padding: 0.65rem 0 0;
+      margin: 0;
+      border-top: 1px solid var(--border);
+      font-size: 0.88rem;
+    }
+    .deep-links a { font-weight: 500; }
     footer { margin-top: 2.5rem; font-size: 0.9rem; color: var(--muted); }
     footer a { color: var(--accent); }
   </style>
@@ -61,25 +72,58 @@
   <main>
     <article class="card">
       <h2><a href="https://www.exifstudio.online">ExifStudio — Browser EXIF &amp; Photo Metadata Editor</a></h2>
-      <p>Inspect, edit, and strip EXIF, GPS location tags, and camera metadata directly in your browser without uploading photos to any remote server. Supports JPEG, PNG, and WebP formats with batch processing.</p>
+      <p>Inspect, edit, and strip EXIF, GPS location tags, and camera metadata directly in your browser without uploading photos to any remote server. Supports JPEG, PNG, HEIC, WebP, and PDF Info cleaning in local memory.</p>
+      <ul class="deep-links">
+        <li><a href="https://www.exifstudio.online/shutter-count">Shutter Count Checker</a></li>
+        <li><a href="https://www.exifstudio.online/inspector">EXIF Metadata Inspector</a></li>
+        <li><a href="https://www.exifstudio.online/geotag-photos">GPS Geotag Scrubber</a></li>
+        <li><a href="https://www.exifstudio.online/pdf-metadata">PDF Metadata Cleaner</a></li>
+        <li><a href="https://www.exifstudio.online/dpi-converter">Print DPI Converter</a></li>
+        <li><a href="https://www.exifstudio.online/heic-to-jpg">HEIC to JPG Tool</a></li>
+        <li><a href="https://www.exifstudio.online/about">About ExifStudio</a></li>
+      </ul>
     </article>
 
     <article class="card">
       <h2><a href="https://alfalaki.space">Alfalaki — Interactive Astronomy &amp; Lunar Ephemeris</a></h2>
-      <p>Client-side astronomical computation toolkit featuring live 3D sky maps, solar and lunar eclipse timelines, planetary coordinates, moon phases, and Islamic Hijri lunar visibility calculations.</p>
+      <p>Client-side VSOP87 &amp; ELP2000 astronomical toolkit featuring interactive natal charts, trilingual daily transit scopes, 3D star maps, eclipse schedules, and topocentric Hilal crescent visibility predictions.</p>
+      <ul class="deep-links">
+        <li><a href="https://alfalaki.space/natal/">Natal Chart Calculator</a></li>
+        <li><a href="https://alfalaki.space/ar/natal/">خريطة الميلاد بالعربية</a></li>
+        <li><a href="https://alfalaki.space/fr/horoscope/">Horoscope Quotidien (FR)</a></li>
+        <li><a href="https://alfalaki.space/fr/horoscope/taurus/">Horoscope Taureau</a></li>
+        <li><a href="https://alfalaki.space/fr/horoscope/scorpio/">Horoscope Scorpion</a></li>
+        <li><a href="https://alfalaki.space/moon-today/">Moon Phase Today</a></li>
+        <li><a href="https://alfalaki.space/moon-today/casablanca/">Casablanca Moon &amp; Hilal</a></li>
+        <li><a href="https://alfalaki.space/ar/moon-today/mecca/">هلال مكة المكرمة</a></li>
+        <li><a href="https://alfalaki.space/fr/moon-today/paris/">Lune et Croissant à Paris</a></li>
+        <li><a href="https://alfalaki.space/sky-map/">3D Sky Map</a></li>
+        <li><a href="https://alfalaki.space/compatibility/">Synastry Compatibility</a></li>
+        <li><a href="https://alfalaki.space/tarot/">Astronomical Tarot</a></li>
+        <li><a href="https://alfalaki.space/about/">About Alfalaki</a></li>
+      </ul>
     </article>
 
     <article class="card">
       <h2><a href="https://www.wedmaroc.com">WedMaroc — Moroccan Wedding Planner &amp; Vendor Directory</a></h2>
-      <p>Interactive Moroccan wedding planning workspace with city-by-city venue and vendor directories, budget estimation tools, timelines, and printable checklists tailored for ceremonies across Morocco.</p>
+      <p>Interactive Moroccan wedding planning workspace with city-by-city caterer, venue, and Neggafa guides, interactive budget estimators, timelines, and civil marriage documentation across 28 Moroccan cities.</p>
+      <ul class="deep-links">
+        <li><a href="https://www.wedmaroc.com/fr/">Planificateur (FR)</a></li>
+        <li><a href="https://www.wedmaroc.com/en/">Wedding Planner (EN)</a></li>
+        <li><a href="https://www.wedmaroc.com/casablanca/traiteur">Casablanca Traiteurs</a></li>
+        <li><a href="https://www.wedmaroc.com/marrakech/salle-des-fetes">Marrakech Venues</a></li>
+        <li><a href="https://www.wedmaroc.com/rabat/neggafa">Rabat Neggafa Guide</a></li>
+        <li><a href="https://www.wedmaroc.com/blog/documents-mariage-adoul-maroc-2026">Adoul Marriage Dossier</a></li>
+        <li><a href="https://www.wedmaroc.com/about">About WedMaroc</a></li>
+      </ul>
     </article>
   </main>
 
   <footer>
-    <p>Maintained by <a href="https://github.com/samsali-g">@samsali-g</a>. Related links:
-      <a href="https://www.exifstudio.online">ExifStudio</a> ·
-      <a href="https://alfalaki.space">Alfalaki</a> ·
-      <a href="https://www.wedmaroc.com">WedMaroc</a>
+    <p>Maintained by <a href="https://github.com/samsali-g">@samsali-g</a> ·
+      <a href="https://www.exifstudio.online/inspector">ExifStudio</a> ·
+      <a href="https://alfalaki.space/natal/">Alfalaki</a> ·
+      <a href="https://www.wedmaroc.com/fr/">WedMaroc</a>
     </p>
   </footer>
 </body>
